@@ -169,7 +169,7 @@ export default class MerkleProof2019 extends Suite {
       proof: this.proof,
       verificationMethod: this.verificationMethodPublicKey,
       options: {
-        explorerAPIs: this.explorerAPIs,
+        explorerAPIs: this.explorerAPIs as any,
         executeStepMethod: this.executeStep
       }
     });
